@@ -19,29 +19,35 @@ function checkHighlight() {
         guestScore.classList.remove('highlight');
     }
 }
+window.checkHighlight = checkHighlight;
 
 function addHome1(){
     homeScore.innerText=Number(homeScore.innerText)+1;
     checkHighlight();
 }
+window.addHome1 = addHome1;
 function addHome2(){
     homeScore.innerText=Number(homeScore.innerText)+2;
     checkHighlight();
 }
+window.addHome2 = addHome2;
 function addHome3(){
     homeScore.innerText=Number(homeScore.innerText)+3;
     checkHighlight();
 }
-
+window.addHome3 = addHome3;
 function addGuest1(){
     guestScore.innerText=Number(guestScore.innerText)+1;
     checkHighlight();
 }
+window.addGuest1 = addGuest1;
 function addGuest2(){
     guestScore.innerText=Number(guestScore.innerText)+2;
     checkHighlight();
 }
+window.addGuest2 = addGuest2;
 function addGuest3(){
     guestScore.innerText=Number(guestScore.innerText)+3;
     checkHighlight();
 }
+window.addGuest3 = addGuest3;
